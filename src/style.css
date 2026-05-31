@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100svh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 1rem;
+  overflow-y: hidden;
+}
+
+.top-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+  gap: 2rem;
+}
+
+.top-header > i {
+  scale: 2;
+}
+
+#input {
+  padding: 1rem;
+  min-width: 70%;
+}
+
+#output {
+  width: 70%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Output Cards styles */
+.card {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: rgb(7 16 45);
+  background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  border-radius: 1rem;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.title-card {
+  font-size: 1.5rem;
+}
+
+.capital-card {
+  color: lightcoral;
+}
