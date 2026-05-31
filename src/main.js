@@ -2,7 +2,7 @@ const input = document.querySelector("#input");
 const output = document.querySelector("#output");
 
 const searchList = async (value) => {
-  const res = await fetch("/data/states.json");
+  const res = await fetch(`${import.meta.env.BASE_URL}/data/states.json`);
   const states = await res.json();
 
   let matchesStates = states.filter((state) => {
